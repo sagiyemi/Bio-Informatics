@@ -1,0 +1,19 @@
+# RNA / DNA 
+#
+# Uses ambiguous nucleotide codes, probabilities rounded to
+#  nearest integer
+#
+# Lowest score = -4, Highest score = 5
+#
+    A   T   G   C   U   N   *
+A   5  -3  -3  -3  -3   5   -2
+T  -3   5  -3  -3   5   5   -2
+G  -3  -3   5  -3  -3   5   -2
+C  -3  -3  -3   5  -3   5   -2
+U  -3   5  -3  -3   5   5   -2
+N   5   5   5   5   5   5   -2
+*  -2  -2  -2  -2  -2  -2   -2
+#
+# Affine gap function  w(x) = A + Bx
+A 1
+B 1
